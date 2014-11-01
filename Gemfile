@@ -7,9 +7,9 @@ gem 'nokogiri' # スクレイピングに使用
 gem 'parallel' # 並列処理に使用
 gem 'addressable',require: 'addressable/uri' # 日本語URIに使用
 
-group :production do
-  gem 'pg'
-end
+gem 'pg'
+
+
 
 
 

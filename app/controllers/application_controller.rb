@@ -5,11 +5,14 @@ class ApplicationController < ActionController::Base
   	# For APIs, you may want to use :null_session instead.
 	protect_from_forgery with: :exception
 
+	#AWSAccessKeyId=AKIAJRXEWOJB2LNN2FHA
+	#AWSSecretKey=zHLPWorLsrCMT7IhqqnMFTaBxwS3lDzsCOsnNnQl
+
   	device_token = ''
-	aws_access_key = 'your aws access key'
-	aws_secret_key = 'your aws secret key'
-	region = 'your aws region'
-	application_arn = 'your application arn'
+	aws_access_key = 'AKIAJRXEWOJB2LNN2FHA'
+	aws_secret_key = 'zHLPWorLsrCMT7IhqqnMFTaBxwS3lDzsCOsnNnQl'
+	region = 'tokyo'
+	application_arn = 'arn:aws:sns:ap-northeast-1:023045183369:app/GCM/rakuten_cafe_push'
 
 	AWS.config(
 	  access_key_id: aws_access_key,
