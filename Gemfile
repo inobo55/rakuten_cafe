@@ -1,17 +1,26 @@
 source 'https://rubygems.org'
 
-
+gem 'aws-sdk'  # AWS-PUSH通知
 gem 'execjs'   # JSRuntimeがないよ対策
 gem 'therubyracer' # JSRuntimeがないよ対策
 gem 'nokogiri' # スクレイピングに使用
 gem 'parallel' # 並列処理に使用
 gem 'addressable',require: 'addressable/uri' # 日本語URIに使用
 
+group :production do
+  gem 'pg'
+end
+
+
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.5'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# gem 'sqlite3'
+
+
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
